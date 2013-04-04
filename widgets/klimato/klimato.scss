@@ -1,3 +1,11 @@
+$temperature-below-0:  #52a5ff;
+$temperature-0-5:      #48efff;
+$temperature-5-10:     #4dff5a;
+$temperature-10-15:    #ffe33d;
+$temperature-15-20:    #ff9d37;
+$temperature-20-25:    #ff5131;
+$temperature-above-25: #ff2c59;
+
 $default-background-color: darkturquoise;
 
 .widget-klimato {
@@ -22,6 +30,14 @@ $default-background-color: darkturquoise;
     letter-spacing: 2px;
   }
 }
+
+.klimato-temperature-below-0  { background-color: $temperature-below-0; }
+.klimato-temperature-0-5      { background-color: $temperature-0-5; }
+.klimato-temperature-5-10     { background-color: $temperature-5-10; }
+.klimato-temperature-10-15    { background-color: $temperature-10-15; }
+.klimato-temperature-15-20    { background-color: $temperature-15-20; }
+.klimato-temperature-20-25    { background-color: $temperature-20-25; }
+.klimato-temperature-above-25 { background-color: $temperature-above-25; }
 
 .klimato-0:before { content: "\e037"; }
 .klimato-1:before { content: "\e009"; }
