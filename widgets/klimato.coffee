@@ -1,0 +1,1 @@
+class Dashing.Klimato extends Dashing.Widget
