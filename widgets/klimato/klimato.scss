@@ -1,26 +1,26 @@
-$background-color: darkturquoise;
+$default-background-color: darkturquoise;
 
 .widget-klimato {
-	background: $background-color;
+  background-color: $default-background-color;
 
-	h1 { 
-		display: inline-block; vertical-align: middle;
-		font-size: 80px;
-		&:after { content: '\00b0'; }
-	}
+  h1 {
+    display: inline-block; vertical-align: middle;
+    font-size: 80px;
+    &:after { content: '\00b0'; }
+  }
 
-	h2 { 
-		display: inline-block; vertical-align: middle;
-		font-size: 120px;
-		font-family: 'Climacons-Font'; 
-	}
+  h2 {
+    display: inline-block; vertical-align: middle;
+    font-size: 120px;
+    font-family: 'Climacons-Font';
+  }
 
-	h3 {
-		width: 100%; margin-top: 10px;
-		text-transform: uppercase;
-		font-size: 15px;
-		letter-spacing: 2px;
-	}
+  h3 {
+    width: 100%; margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 }
 
 .klimato-0:before { content: "\e037"; }
