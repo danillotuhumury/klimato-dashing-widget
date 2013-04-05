@@ -2,6 +2,10 @@ $background-color: darkturquoise;
 
 .widget-klimato {
   background-color: $background-color;
+  transition: background-color 2s linear;
+  -moz-transition: background-color 2s linear;
+  -o-transition: background-color 2s linear;
+  -webkit-transition: background-color 2s linear;
 
   h1 {
     display: inline-block; vertical-align: middle;
