@@ -1,6 +1,6 @@
 ## Description
 
-[Dashing](http://shopify.github.com/dashing) widget to display weather from [Yahoo!](http://developer.yahoo.com/weather/) with the use of the [Climacons Font](http://adamwhitcroft.com/climacons/font/).
+[Dashing](http://shopify.github.com/dashing) widget to display weather from [Yahoo! Weather](http://developer.yahoo.com/weather/) with the use of the [Climacons Font](http://adamwhitcroft.com/climacons/font/).
 
 ##Dependencies
 
@@ -22,6 +22,13 @@ To include the widget into your dashboard add the following code:
       <div data-id="klimato" data-view="Klimato"></div>
     </li>
 
+##Settings
+
+Adjust the widget to your desired location by editting the WOEID (Where On Earth ID) in the jobs file. (You can lookup your WOEID here: http://woeid.rosselliot.co.nz)
+
+You are also able to change the metrics unit for your widget by editting the format in the jobs file. (Yahoo! Weather API supports both Fahrenheit (f) and Celsius (c)) 
+
 ##Preview
 
-![](https://f.cloud.github.com/assets/1248374/340959/460593d4-9d61-11e2-93d0-4d1349df64d8.png)
+![cold](https://f.cloud.github.com/assets/1248374/346213/abe9a4f4-9e3a-11e2-8857-b2e740024c86.png)
+![hot](https://f.cloud.github.com/assets/1248374/346214/ac034382-9e3a-11e2-821a-06df468dd448.png)
