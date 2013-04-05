@@ -1,7 +1,5 @@
 class Dashing.Klimato extends Dashing.Widget
 
-  @accessor "temperature", Dashing.AnimatedValue
-
   onData: (data) ->
     @setBackgroundClassBy parseInt(data.temperature, 10), data.format
 
