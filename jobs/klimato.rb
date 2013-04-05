@@ -21,6 +21,6 @@ SCHEDULER.every "15m", :first_in => 0 do |job|
   if results
     condition = results["channel"]["item"]["condition"]
     location  = results["channel"]["location"]
-    send_event "klimato", { location: "#{location['city']}", temperature: "#{condition['temp']}", code: "#{condition['code']}", format: format }
+    send_event "klimato", { location: location["city"], temperature: condition["temp"], code: condition["code"], format: format }
   end
 end
