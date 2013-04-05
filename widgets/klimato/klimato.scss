@@ -1,15 +1,15 @@
-$temperature-below-0:  #52a5ff;
-$temperature-0-5:      #48efff;
-$temperature-5-10:     #4dff5a;
-$temperature-10-15:    #ffe33d;
-$temperature-15-20:    #ff9d37;
-$temperature-20-25:    #ff5131;
-$temperature-above-25: #ff2c59;
+$temperature-0: #52a5ff;
+$temperature-1: #48efff;
+$temperature-2: #4dff5a;
+$temperature-3: #ffe33d;
+$temperature-4: #ff9d37;
+$temperature-5: #ff5131;
+$temperature-6: #ff2c59;
 
-$default-background-color: darkturquoise;
+$background-color: darkturquoise;
 
 .widget-klimato {
-  background-color: $default-background-color;
+  background-color: $background-color;
 
   h1 {
     display: inline-block; vertical-align: middle;
@@ -31,13 +31,13 @@ $default-background-color: darkturquoise;
   }
 }
 
-.klimato-temperature-below-0  { background-color: $temperature-below-0; }
-.klimato-temperature-0-5      { background-color: $temperature-0-5; }
-.klimato-temperature-5-10     { background-color: $temperature-5-10; }
-.klimato-temperature-10-15    { background-color: $temperature-10-15; }
-.klimato-temperature-15-20    { background-color: $temperature-15-20; }
-.klimato-temperature-20-25    { background-color: $temperature-20-25; }
-.klimato-temperature-above-25 { background-color: $temperature-above-25; }
+.klimato-temperature-0 { background-color: $temperature-0; }
+.klimato-temperature-1 { background-color: $temperature-1; }
+.klimato-temperature-2 { background-color: $temperature-2; }
+.klimato-temperature-3 { background-color: $temperature-3; }
+.klimato-temperature-4 { background-color: $temperature-4; }
+.klimato-temperature-5 { background-color: $temperature-5; }
+.klimato-temperature-6 { background-color: $temperature-6; }
 
 .klimato-0:before { content: "\e037"; }
 .klimato-1:before { content: "\e009"; }
