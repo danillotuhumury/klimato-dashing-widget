@@ -1,7 +1,8 @@
 class Dashing.Klimato extends Dashing.Widget
 
   onData: (data) ->
-    @setBackgroundClassBy data.temperature
+    if data.format == "c"
+      @setBackgroundClassBy data.temperature
 
   setBackgroundClassBy: (temperature) ->
     @removeBackgroundClass()
