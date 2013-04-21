@@ -1,4 +1,11 @@
 $background-color: darkturquoise;
+$background-color-0: #52a5ff;
+$background-color-1: #48efff;
+$background-color-2: #4dff5a;
+$background-color-3: #ffe33d;
+$background-color-4: #ff9d37;
+$background-color-5: #ff5131;
+$background-color-6: #ff2c59;
 
 .widget-klimato {
   background-color: $background-color;
@@ -25,15 +32,70 @@ $background-color: darkturquoise;
     font-size: 15px;
     letter-spacing: 2px;
   }
+
+  .updated-at {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: lighten($background-color, 15%);
+  }
 }
 
-.klimato-temperature-0 { background-color: #52a5ff; }
-.klimato-temperature-1 { background-color: #48efff; }
-.klimato-temperature-2 { background-color: #4dff5a; }
-.klimato-temperature-3 { background-color: #ffe33d; }
-.klimato-temperature-4 { background-color: #ff9d37; }
-.klimato-temperature-5 { background-color: #ff5131; }
-.klimato-temperature-6 { background-color: #ff2c59; }
+.klimato-temperature-0 {
+  background-color: $background-color-0;
+
+  .updated-at {
+    color: lighten($background-color-0, 15%);
+  }
+}
+
+.klimato-temperature-1 {
+  background-color: $background-color-1;
+
+  .updated-at {
+    color: lighten($background-color-1, 25%);
+  }
+}
+
+.klimato-temperature-2 {
+  background-color: $background-color-2;
+
+  .updated-at {
+    color: lighten($background-color-2, 25%);
+  }
+}
+
+.klimato-temperature-3 {
+  background-color: $background-color-3;
+
+  .updated-at {
+    color: lighten($background-color-3, 25%);
+  }
+}
+
+.klimato-temperature-4 {
+  background-color: $background-color-4;
+
+  .updated-at {
+    color: lighten($background-color-4, 15%);
+  }
+}
+
+.klimato-temperature-5 {
+  background-color: $background-color-5;
+
+  .updated-at {
+    color: lighten($background-color-5, 15%);
+  }
+}
+
+.klimato-temperature-6 {
+  background-color: $background-color-6;
+
+  .updated-at {
+    color: lighten($background-color-6, 15%);
+  }
+}
 
 .klimato-0:before { content: "\e037"; }
 .klimato-1:before { content: "\e009"; }
