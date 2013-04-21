@@ -42,150 +42,16 @@ $background-colors: #52a5ff #48efff #4dff5a #ffe33d #ff9d37 #ff5131 #ff2c59
   background-color: $color
 
   .updated-at
-.klimato-0:before
-  content: "\e037"
-
-.klimato-1:before
-  content: "\e009"
-
-.klimato-2:before
-  content: "\e009"
-
-.klimato-3:before
-  content: "\e025"
-
-.klimato-4:before
-  content: "\e025"
-
-.klimato-5:before
-  content: "\e00f"
-
-.klimato-6:before
-  content: "\e015"
-
-.klimato-7:before
-  content: "\e00f"
-
-.klimato-8:before
-  content: "\e00c"
-
-.klimato-9:before
-  content: "\e00c"
-
-.klimato-10:before
-  content: "\e00f"
-
-.klimato-11:before
-  content: "\e006"
-
-.klimato-12:before
-  content: "\e006"
-
-.klimato-13:before
-  content: "\e015"
-
-.klimato-14:before
-  content: "\e018"
-
-.klimato-15:before
-  content: "\e018"
-
-.klimato-16:before
-  content: "\e018"
-
-.klimato-17:before
-  content: "\e012"
-
-.klimato-18:before
-  content: "\e00f"
-
-.klimato-19:before
-  content: "\e01e"
-
-.klimato-20:before
-  content: "\e01b"
-
-.klimato-21:before
-  content: "\e01e"
-
-.klimato-22:before
-  content: "\e01e"
-
-.klimato-23:before
-  content: "\e01e"
-
-.klimato-24:before
-  content: "\e021"
-
-.klimato-25:before
-  content: "\e01b"
-
-.klimato-26:before
-  content: "\e000"
-
-.klimato-27:before
-  content: "\e002"
-
-.klimato-28:before
-  content: "\e001"
-
-.klimato-29:before
-  content: "\e002"
-
-.klimato-30:before
-  content: "\e001"
-
-.klimato-31:before
-  content: "\e02d"
-
-.klimato-32:before
-  content: "\e028"
-
-.klimato-33:before
-  content: "\e001"
-
-.klimato-34:before
-  content: "\e002"
-
-.klimato-35:before
-  content: "\e012"
-
-.klimato-36:before
-  content: "\e028"
-
-.klimato-37:before
-  content: "\e025"
-
-.klimato-38:before
-  content: "\e025"
-
-.klimato-39:before
-  content: "\e025"
-
-.klimato-40:before
-  content: "\e006"
-
-.klimato-41:before
-  content: "\e036"
-
-.klimato-42:before
-  content: "\e036"
-
-.klimato-43:before
-  content: "\e036"
     color: lighten($color, $percentage)
 
-.klimato-44:before
-  content: "\e000"
 @for $index from 0 through 6
   .klimato-temperature-#{$index}
     +klimato-background(nth($background-colors, $index + 1))
 
-.klimato-45:before
-  content: "\e025"
+// climacons
 
-.klimato-46:before
-  content: "\e036"
+$climacons: "\e037" "\e009" "\e009" "\e025" "\e025" "\e00f" "\e015" " \e00f" "\e00c" "\e00c" "\e00f" "\e006" "\e006" "\e015" "\e018" "\e018" "\e018" "\e012" "\e00f" "\e01e" "\e01b" "\e01e" "\e01e" "\e01e" "\e021" "\e01b" "\e000" "\e002" "\e001" "\e002" "\e001" "\e02d" "\e028" "\e001" "\e002" "\e012" "\e028" "\e025" "\e025" "\e025" "\e006" "\e036" "\e036" "\e036" "\e000" "\e025" "\e036" "\e025"
 
-.klimato-47:before
-  content: "\e025"
+@for $index from 0 through 47
+  .klimato-#{$index}:before
+    content: nth($climacons, $index + 1)
