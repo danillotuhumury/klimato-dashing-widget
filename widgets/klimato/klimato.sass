@@ -1,11 +1,4 @@
 $background-color: darkturquoise
-$background-color-0: #52a5ff
-$background-color-1: #48efff
-$background-color-2: #4dff5a
-$background-color-3: #ffe33d
-$background-color-4: #ff9d37
-$background-color-5: #ff5131
-$background-color-6: #ff2c59
 
 .widget-klimato
   background-color: $background-color
@@ -41,48 +34,14 @@ $background-color-6: #ff2c59
     font-size: 10px
     color: lighten($background-color, 15%)
 
-.klimato-temperature-0
-  background-color: $background-color-0
+// background colors
+
+$background-colors: #52a5ff #48efff #4dff5a #ffe33d #ff9d37 #ff5131 #ff2c59
+
+=klimato-background($color, $percentage: 25%)
+  background-color: $color
 
   .updated-at
-    color: lighten($background-color-0, 15%)
-
-.klimato-temperature-1
-  background-color: $background-color-1
-
-  .updated-at
-    color: lighten($background-color-1, 25%)
-
-.klimato-temperature-2
-  background-color: $background-color-2
-
-  .updated-at
-    color: lighten($background-color-2, 25%)
-
-.klimato-temperature-3
-  background-color: $background-color-3
-
-  .updated-at
-    color: lighten($background-color-3, 25%)
-
-.klimato-temperature-4
-  background-color: $background-color-4
-
-  .updated-at
-    color: lighten($background-color-4, 15%)
-
-.klimato-temperature-5
-  background-color: $background-color-5
-
-  .updated-at
-    color: lighten($background-color-5, 15%)
-
-.klimato-temperature-6
-  background-color: $background-color-6
-
-  .updated-at
-    color: lighten($background-color-6, 15%)
-
 .klimato-0:before
   content: "\e037"
 
@@ -214,9 +173,13 @@ $background-color-6: #ff2c59
 
 .klimato-43:before
   content: "\e036"
+    color: lighten($color, $percentage)
 
 .klimato-44:before
   content: "\e000"
+@for $index from 0 through 6
+  .klimato-temperature-#{$index}
+    +klimato-background(nth($background-colors, $index + 1))
 
 .klimato-45:before
   content: "\e025"
