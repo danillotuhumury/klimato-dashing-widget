@@ -14,7 +14,7 @@ and run `bundle install`.
 
 ##Usage
 
-To use this widget, copy `klimato.coffee`, `klimato.html`, and `klimato.scss` into the `/widgets/klimato` directory. Put the `klimato.rb` file in your `/jobs` folder, the 4 font files (.EOT, .WOFF, .SVG & .TTF) in your `/assets/fonts` directory and the `climacons-font.css` in your `/assets/stylesheets` directory.
+To use this widget, copy `klimato.coffee`, `klimato.html`, and `klimato.sass` into the `/widgets/klimato` directory. Put the `klimato.rb` file in your `/jobs` folder, the 4 font files (.EOT, .WOFF, .SVG & .TTF) in your `/assets/fonts` directory and the `climacons-font.css` in your `/assets/stylesheets` directory.
 
 To include the widget into your dashboard add the following code:
 
